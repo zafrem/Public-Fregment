@@ -1,3 +1,0 @@
-# Maker
-## [Youtube]()
-## [Blogger]()
