@@ -1,8 +1,6 @@
 # Pre-courses
 
 
-## [1.Python install](1.Python Install.md)
-## 2.Env setting
-  - [Console](2.Env setup-Console.md)
-  - [Pycharm](2.Env setup-Pycharm.md)
-## [3.Virtualenv Environment](3.Virtualenv Environment.md)
+## [1. Python install](1.%20Python Install.md)
+## [2. PyCharm Setup](2.%20PyCharm-Env setup package install.md)
+## [3. Issues and Troubleshooting](3.%20Issues and Troubleshooting.md)
