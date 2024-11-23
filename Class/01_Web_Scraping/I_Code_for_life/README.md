@@ -1,12 +1,12 @@
 # Code for life
 ## Example
-1. [Stock View](1.%20Stock_google.py)
-2. [Altcoin View](2.%20Altcoin_google.py)
-3. [Trend Keyword-Google Trend](3.%20Trend%20Keyword_Google_trend.py)
-4. [Trend Keyword-Blackkiwi](3.%20Trend%20Keyword_Blackkiwi.py)
-5. [Spot-NFL](4.%20Spot-NFL.py)
-6. [Spot-Premier League](5.%20Spot-Premier%20League.py)
-7. [Weather](6.%20Weather_windy.py)
+1. [Stock View](1.Stock_google.py)
+2. [Altcoin View](2.Altcoin_google.py)
+3. [Trend Keyword-Google Trend](3.Trend_Keyword_Google_trend.py)
+4. [Trend Keyword-Blackkiwi](3.Trend_Keyword_Blackkiwi.py)
+5. [Spot-NFL](4.Spot-NFL.py)
+6. [Spot-Premier League](5.Spot-Premier_League.py)
+7. [Weather](6.Weather_windy.py)
 
 ## Stock View (in Google)
 ### Step 1. Google Web page search "Tesla stock"
