@@ -57,7 +57,7 @@ def get_keyword():
             print(f"Time : {_time.text}, \tTemperature : {_temp.text}, \tWindy : {_windy.text}")
 
     except Exception as e:
-        print(f"오류 발생: {e}")
+        print(f"Error : {e}")
 
     driver.quit()
 

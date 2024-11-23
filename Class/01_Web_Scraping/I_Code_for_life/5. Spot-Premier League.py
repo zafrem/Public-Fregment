@@ -36,7 +36,7 @@ def get_keyword():
                 print(f"{idx}. {date[0]} \t {time.text} : {team1.text} vs {team2.text}")
 
     except Exception as e:
-        print(f"오류 발생: {e}")
+        print(f"Error : {e}")
 
     driver.quit()
 

@@ -44,7 +44,7 @@ def get_today_nfl_schedules():
         for idx, title in enumerate(elements, 1):
             parsing(title.text)
     except Exception as e:
-        print(f"오류 발생: {e}")
+        print(f"Error : {e}")
 
     driver.quit()
 

@@ -30,7 +30,7 @@ def get_keyword():
             print(f"{idx}. {title.text}")
 
     except Exception as e:
-        print(f"오류 발생: {e}")
+        print(f"Error: {e}")
 
     driver.quit()
 
