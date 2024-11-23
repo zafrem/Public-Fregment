@@ -15,7 +15,6 @@ from selenium.webdriver.common.keys import Keys
 def get_keyword():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    # options.add_argument('headless')
     driver = webdriver.Chrome(service=service, options=options)
     url = 'https://embed.windy.com/config/forecast'
     driver.get(url)

@@ -88,31 +88,83 @@ It would be nice to have an API, but I don't see any RSS or API.
 <img src="./images/Trend_blackkiwi_7.jpg" title="in file"/>
 
 ## NFL Schedule
-### Stemp 1. NFL Web page
+### Step 1. NFL Web page
 <img src="./images/NFL_1.jpg" title=""/>
 
-### Stemp 2. Mouse right button click, Inspect select
+### Step 2. Mouse right button click, Inspect select
 <img src="./images/NFL_2.jpg" title=""/>
 
-### Stemp 3. Match code and text
+### Step 3. Match code and text
 <img src="./images/NFL_3.jpg" title=""/>
 
-### Stemp 4. Copy Full XPath
+### Step 4. Copy Full XPath
 <img src="./images/NFL_4.jpg" title=""/>
 
-### Stemp 5. Two type information
+### Step 5. Two type information
 <img src="./images/NFL_5.jpg" title=""/>
 
-### Stemp 6. Parsing string
+### Step 6. Parsing string
 <img src="./images/NFL_6.jpg" title=""/>
 
-### Stemp 7. Chrome selenium mode (Automation test mode)
+### Step 7. Chrome selenium mode (Automation test mode)
 <img src="./images/NFL_7.jpg" title=""/>
 
-### Stemp 8. Cmd stdout
+### Step 8. Cmd stdout
 <img src="./images/NFL_8.jpg" title=""/>
 
 ## Premier League Schedule
+### Step 1. Premier League Web page target
+<img src="./images/Premier_league_1.jpg" title=""/>
+
+### Step 2. Mouse right button click, Inspect select
+<img src="./images/Premier_league_2.jpg" title=""/>
+
+### Step 3. Match Web and Code
+<img src="./images/Premier_league_3.jpg" title=""/>
+
+### Step 4. Two type information
+<img src="./images/Premier_league_4.jpg" title=""/>
+
+### Step 5. Finished and upcoming matches
+<img src="./images/Premier_league_5.jpg" title=""/>
+
+### Step 6. Merge two 
+<img src="./images/Premier_league_6.jpg" title=""/>
+
+### Step 7. Chrome selenium mode (Automation test mode)
+<img src="./images/Premier_league_7.jpg" title=""/>
+
+### Step 8. Cmd stdout
+<img src="./images/Premier_league_8.jpg" title=""/>
 
 ## Weather
+### Step 1. Weather Web site 
+<img src="./images/Weather_1.jpg" title=""/>
+
+### Step 2. Mouse right button click, Inspect select
+<img src="./images/Weather_2.jpg" title=""/>
+
+### Step 3. Target city
+<img src="./images/Weather_3.jpg" title=""/>
+
+### Step 4. Arrow down and Return key
+<img src="./images/Weather_4.jpg" title=""/>
+
+### Step 5. Change city
+<img src="./images/Weather_5.jpg" title=""/>
+
+### Step 6. Code copy
+<img src="./images/Weather_6.jpg" title=""/>
+
+### Step 7. Detect iframe 
+<img src="./images/Weather_7.jpg" title=""/>
+
+### Step 8. Switch iframe
+<img src="./images/Weather_8.jpg" title=""/>
+
+### Step 9. Chrome selenium mode (Automation test mode)
+<img src="./images/Weather_9.jpg" title=""/>
+
+### Step 10. Cmd stdout
+<img src="./images/Weather_10.jpg" title=""/>
 
