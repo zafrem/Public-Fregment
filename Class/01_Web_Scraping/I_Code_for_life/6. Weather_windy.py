@@ -24,7 +24,8 @@ def get_keyword():
         WebDriverWait(driver, 10).until(
             # Wait loading element
             EC.presence_of_element_located((By.XPATH,
-                                            '/html/body/div/main/div/section[1]/section/section[1]/div/div[2]/div/div[1]/span/input')),
+                                            '/html/body/div/main/div/section[1]/section/section[1]/div/div['
+                                            '2]/div/div[1]/span/input')),
         )
 
         driver.find_element(By.XPATH,
@@ -41,17 +42,18 @@ def get_keyword():
         WebDriverWait(driver, 10).until(
             # Wait loading element
             EC.presence_of_element_located((By.XPATH,
-                                            '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[2]/td[1]')),
+                                            '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr['
+                                            '2]/td[1]')),
         )
 
         times = driver.find_elements(By.XPATH,
-                                    '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[2]/td')
+                                     '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[2]/td')
         temps = driver.find_elements(By.XPATH,
-                                    '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[4]/td')
-        windys = driver.find_elements(By.XPATH,
-                                    '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[6]/td')
+                                     '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[4]/td')
+        windy = driver.find_elements(By.XPATH,
+                                      '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[6]/td')
 
-        for _time, _temp, _windy in zip(times, temps, windys):
+        for _time, _temp, _windy in zip(times, temps, windy):
             print(f"Time : {_time.text}, \tTemperature : {_temp.text}, \tWindy : {_windy.text}")
 
     except Exception as e:

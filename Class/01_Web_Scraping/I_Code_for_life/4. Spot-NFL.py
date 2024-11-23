@@ -7,6 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+
 def parsing(string):
     lists = string.split('\n')
     date = lists[0]
@@ -25,8 +26,10 @@ def parsing(string):
             team2s.append(lists[i + 4] + lists[i + 5])
     print("==============================")
     print(date)
-    for time, team1, team2 in zip(times, team1s,team2s):
+    for time, team1, team2 in zip(times, team1s, team2s):
         print(time + ":" + team1 + " vs " + team2)
+
+
 def get_today_nfl_schedules():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
@@ -44,6 +47,7 @@ def get_today_nfl_schedules():
         print(f"오류 발생: {e}")
 
     driver.quit()
+
 
 if __name__ == "__main__":
     get_today_nfl_schedules()

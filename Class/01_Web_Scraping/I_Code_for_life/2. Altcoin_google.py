@@ -19,7 +19,7 @@ def get_today_stock_data(altcoin):
 
     # Step 3: Parse the HTML content
     soup = BeautifulSoup(response.content, "html.parser")
-    print(soup.html)
+    # print(soup.html) #Debug Code
 
     # Step 4: Extract specific data
     current = soup.select_one('div.card-section.PZPZlf > div:nth-child(2) > span.pclqee')
