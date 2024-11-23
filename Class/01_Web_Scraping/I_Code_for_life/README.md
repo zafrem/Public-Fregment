@@ -1,5 +1,5 @@
 # Code for life
-## Example
+## Example code
 1. [Stock View](1.Stock_google.py)
 2. [Altcoin View](2.Altcoin_google.py)
 3. [Trend Keyword-Google Trend](3.Trend_Keyword_Google_trend.py)

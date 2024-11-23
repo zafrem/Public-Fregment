@@ -1,5 +1,5 @@
 # Theory
-## Crawling and Scraping
+## Crawling and Scraping 
 ## Scraping
 ### Static (requests)
 ### Dynamic (selenium)
