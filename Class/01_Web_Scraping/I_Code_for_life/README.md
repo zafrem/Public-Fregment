@@ -88,5 +88,31 @@ It would be nice to have an API, but I don't see any RSS or API.
 <img src="./images/Trend_blackkiwi_7.jpg" title="in file"/>
 
 ## NFL Schedule
+### Stemp 1. NFL Web page
+<img src="./images/NFL_1.jpg" title=""/>
+
+### Stemp 2. Mouse right button click, Inspect select
+<img src="./images/NFL_2.jpg" title=""/>
+
+### Stemp 3. Match code and text
+<img src="./images/NFL_3.jpg" title=""/>
+
+### Stemp 4. Copy Full XPath
+<img src="./images/NFL_4.jpg" title=""/>
+
+### Stemp 5. Two type information
+<img src="./images/NFL_5.jpg" title=""/>
+
+### Stemp 6. Parsing string
+<img src="./images/NFL_6.jpg" title=""/>
+
+### Stemp 7. Chrome selenium mode (Automation test mode)
+<img src="./images/NFL_7.jpg" title=""/>
+
+### Stemp 8. Cmd stdout
+<img src="./images/NFL_8.jpg" title=""/>
+
 ## Premier League Schedule
+
 ## Weather
+
