@@ -1,33 +1,92 @@
 # Code for life
 ## Example
-1. [Stock](1.%20Stock_google.py)
-2. [Altcoin](2.%20Altcoin_google.py)
-3. [Trend Keyword](3.%20Trend%20Keyword.py)
-4. [Spot-NFL](4.%20Spot-NFL.py)
-5. [Spot-Premier League](5.%20Spot-Premier%20League.py)
-6. [Weather](6.%20Weather_windy.py)
+1. [Stock View](1.%20Stock_google.py)
+2. [Altcoin View](2.%20Altcoin_google.py)
+3. [Trend Keyword-Google Trend](3.%20Trend%20Keyword_Google_trend.py)
+4. [Trend Keyword-Blackkiwi](3.%20Trend%20Keyword_Blackkiwi.py)
+5. [Spot-NFL](4.%20Spot-NFL.py)
+6. [Spot-Premier League](5.%20Spot-Premier%20League.py)
+7. [Weather](6.%20Weather_windy.py)
 
 ## Stock View (in Google)
 ### Step 1. Google Web page search "Tesla stock"
 <img src="./images/Stock_1.jpg" title="Web page"/>
 
 ### Step 2. Mouse right button click, Inspect select
-<img src="./images/Stock_2.jpg" title="a"/>
+<img src="./images/Stock_2.jpg" title="Object inspect"/>
 
 ### Step 3. Source code
 Mouse right button click > Copy > Copy selector
 
-<img src="./images/Stock_3.jpg" title="a"/>
+<img src="./images/Stock_3.jpg" title="Code"/>
 
 ### Step 4. Output 
-<img src="./images/Stock_4.jpg" title="a"/>
+<img src="./images/Stock_4.jpg" title="stdout"/>
 
 ### Step 5. Write file
-<img src="./images/Stock_5.jpg" title="a"/>
-
+<img src="./images/Stock_5.jpg" title="files"/>
 
 ## Altcoin View (in Google)
-## Trend Blog Keyword
+### Step 1. Google Web page search "dogecoin"
+<img src="./images/Altcoin_1.jpg" title="Search Website"/>
+
+### Step 2. Mouse right button click, Inspect select
+<img src="./images/Altcoin_2.jpg" title="Target select"/>
+
+### Step 3. Source code
+Mouse right button click > Copy > Copy selector
+<img src="./images/Altcoin_3.jpg" title="Code selector copy"/>
+
+### Step 4. Change selector
+<img src="./images/Altcoin_4.jpg" title="Chagne selector"/>
+
+### Step 5. Output 
+<img src="./images/Altcoin_5.jpg" title="Cmd stdout"/>
+
+### Step 6. Write file
+<img src="./images/Altcoin_6.jpg" title="in file"/>
+
+## Trend Keyword - Google Trend
+### Step 1. Google Trend > Trending now 
+<img src="./images/Trend_google_1.jpg" title="in file"/>
+
+### Step 2. Select RSS Feed 
+I have an RSS Feed, not Scraping, so I put that in too. If you have RSS, this is the way to go. 
+<img src="./images/Trend_google_2.jpg" title="in file"/>
+
+### Step 3. Get RSS feed URL
+<img src="./images/Trend_google_3.jpg" title="in file"/>
+
+### Step 4. Other National information
+<img src="./images/Trend_google_4.jpg" title="in file"/>
+
+### Step 5. Cmd stdout
+<img src="./images/Trend_google_5.jpg" title="in file"/>
+<img src="./images/Trend_google_6.jpg" title="in file"/>
+
+## Trend Keyword - Blackkiwi
+### Step 1. Blackkiwi Web > Trend
+<img src="./images/Trend_blackkiwi_1.jpg" title="in file"/>
+
+### Step 2. Target site information
+<img src="./images/Trend_blackkiwi_2.jpg" title="in file"/>
+
+### Step 3. Mouse right button click, Inspect select
+<img src="./images/Trend_blackkiwi_3.jpg" title="in file"/>
+
+### Note: Your screen will look different depending on your billing plan.
+It would be nice to have an API, but I don't see any RSS or API.
+<img src="./images/Trend_blackkiwi_4.jpg" title="in file"/>
+
+### Step 4. Code export XPath
+<img src="./images/Trend_blackkiwi_5.jpg" title="in file"/>
+
+### Step 5. Chrome selenium mode (Automation test mode)
+<img src="./images/Trend_blackkiwi_6.jpg" title="in file"/>
+
+### Step 6. Cmd stdout
+<img src="./images/Trend_blackkiwi_7.jpg" title="in file"/>
+
 ## NFL Schedule
 ## Premier League Schedule
 ## Weather

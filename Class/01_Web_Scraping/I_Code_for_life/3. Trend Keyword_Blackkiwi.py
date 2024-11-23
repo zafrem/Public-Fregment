@@ -11,7 +11,6 @@ from selenium.webdriver.support import expected_conditions as EC
 def get_keyword():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    # options.add_argument('headless')
     driver = webdriver.Chrome(service=service, options=options)
     url = 'https://blackkiwi.net/service/trend'
     driver.get(url)
@@ -23,6 +22,7 @@ def get_keyword():
                                             '/html/body/div[1]/main/div/div[2]/div[1]/div/div[2]/div/div[2]/div['
                                             '1]/div[1]/span[2]/span/a'))
         )
+
         elements = driver.find_elements(By.XPATH,
                                         '/html/body/div[1]/main/div/div[2]/div[1]/div/div['
                                         '2]/div/div/div/div/span/span/a')

@@ -6,7 +6,8 @@ def get_today_stock_data(altcoin):
     # Step 1: Send a GET request to the website
     url = f"https://www.google.com/search?q={altcoin}"
     # https://www.whatismybrowser.com/detect/what-is-my-user-agent/
-    user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+    user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) " \
+                 "Chrome/131.0.0.0 Safari/537.36"
     header = {"User-Agent": user_agent}
     response = requests.get(url, headers=header)
 
@@ -22,6 +23,12 @@ def get_today_stock_data(altcoin):
     # print(soup.html) #Debug Code
 
     # Step 4: Extract specific data
+    current = soup.select_one('#crypto-updatable_tLNBZ8WsLeb02roP_qLU4A0_2 > div.card-section.PZPZlf > div:nth-child('
+                              '2) > span.pclqee')
+    print(current) # None
+    # Browser size The code may vary depending on browser size or device.
+    # Change selector : Delete tag #crypto-updatable_tLNBZ8WsLeb02roP_qLU4A0_2
+
     current = soup.select_one('div.card-section.PZPZlf > div:nth-child(2) > span.pclqee')
     changed = soup.select_one('div.card-section.PZPZlf > span > span:nth-child(1)')
     persent = soup.select_one('div.card-section.PZPZlf > span > span:nth-child(2)')
@@ -37,6 +44,7 @@ def get_today_stock_data(altcoin):
     with open("titles.txt", "a+", encoding="utf-8") as file:
         file.write(f"""{datetime.today().strftime("%Y-%m-%d %H:%M:%S")}: {altcoin} {current.get_text().strip()} ({changed.get_text().strip()})\n""")
         print("Titles saved to titles.txt")
+
 
 if __name__ == "__main__":
     get_today_stock_data("dogecoin")

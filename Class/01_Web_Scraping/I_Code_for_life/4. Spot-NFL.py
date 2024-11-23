@@ -33,7 +33,6 @@ def parsing(string):
 def get_today_nfl_schedules():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
-    options.add_argument('headless')
     driver = webdriver.Chrome(service=service, options=options)
     url = 'https://www.nfl.com/schedules/'
     driver.get(url)
@@ -43,9 +42,9 @@ def get_today_nfl_schedules():
                                         '/html/body/div[3]/main/div/section/div/div')
         for idx, title in enumerate(elements, 1):
             parsing(title.text)
+
     except Exception as e:
         print(f"Error : {e}")
-
     driver.quit()
 
 

@@ -1,6 +1,6 @@
 # Learn Code
 This repo 
-## [Class : Life stuff](Class/README.md)
+## [Class : Python Coding](Class/README.md)
 ## 
 ## 
 ## 
