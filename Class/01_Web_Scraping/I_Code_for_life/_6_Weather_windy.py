@@ -16,6 +16,7 @@ def get_keyword():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
+    return_message = ''
     url = 'https://embed.windy.com/config/forecast'
     driver.get(url)
 
@@ -53,13 +54,14 @@ def get_keyword():
                                       '/html/body/span/div/span/div/div[2]/div[2]/div/div[1]/table/tbody/tr[6]/td')
 
         for _time, _temp, _windy in zip(times, temps, windy):
+            return_message += f"Time : {_time.text}, \tTemperature : {_temp.text}, \tWindy : {_windy.text}\n"
             print(f"Time : {_time.text}, \tTemperature : {_temp.text}, \tWindy : {_windy.text}")
 
     except Exception as e:
         print(f"Error : {e}")
 
     driver.quit()
-
+    return return_message
 
 if __name__ == "__main__":
-    get_keyword()
+    print(get_keyword())

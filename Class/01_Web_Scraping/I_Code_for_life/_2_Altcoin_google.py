@@ -33,18 +33,19 @@ def get_today_stock_data(altcoin):
     changed = soup.select_one('div.card-section.PZPZlf > span > span:nth-child(1)')
     persent = soup.select_one('div.card-section.PZPZlf > span > span:nth-child(2)')
 
-    # Step 5: Display the extracted data
-    print("Extracted current html tag:", current)
-    print("Extracted changed html tag:", changed)
-    print("Extracted persent html tag:", persent)
+    # Step 5: Display the extracted data (debug code)
+    #print("Extracted current html tag:", current)
+    #print("Extracted changed html tag:", changed)
+    #print("Extracted persent html tag:", persent)
 
     # Step 6: Save the data to a file (optional)
     from datetime import datetime
 
     with open("titles.txt", "a+", encoding="utf-8") as file:
         file.write(f"""{datetime.today().strftime("%Y-%m-%d %H:%M:%S")}: {altcoin} {current.get_text().strip()} ({changed.get_text().strip()})\n""")
-        print("Titles saved to titles.txt")
+        #print("Titles saved to titles.txt")
+    return f"""{datetime.today().strftime("%Y-%m-%d %H:%M:%S")}: {altcoin} {current.get_text().strip()} ({changed.get_text().strip()})\n"""
 
 
 if __name__ == "__main__":
-    get_today_stock_data("dogecoin")
+    print(get_today_stock_data("dogecoin"))

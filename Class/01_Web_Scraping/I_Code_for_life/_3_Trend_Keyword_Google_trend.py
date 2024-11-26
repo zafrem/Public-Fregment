@@ -38,13 +38,13 @@ def get_trend(national):
             message += f"  {item.title} ({item.ht_approx_traffic}) - {str(item.ht_news_item_title).replace('&#39;', '').replace('&quot;', '')}\n"
         else:
             continue
-    print(head_message + message)
+    return str(head_message + message)
 
 
 if __name__ == "__main__":
-    print("Google Trend plugin Create!")
+    #print("Google Trend plugin Create!")
     nationals = ['KR', 'US', 'GB', 'JP', 'HK', 'IN', 'TW']
 
     for national in nationals:
-        print(f"Google Trend {national} data get")
-        get_trend(national)
+        #print(f"Google Trend {national} data get")
+        print(get_trend(national))

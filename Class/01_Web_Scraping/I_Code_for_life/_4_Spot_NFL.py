@@ -15,7 +15,10 @@ def parsing(string):
     times = []
     team1s = []
     team2s = []
-    if 'LIVE' == lists[0]:
+
+    return_message = ''
+
+    if 'LIVE' == lists[0] or 'FINAL' == lists[0]:
         times.append(lists[0])
         team1s.append(lists[2] + lists[3] + lists[4])
         team2s.append(lists[5] + lists[6] + lists[7])
@@ -24,29 +27,36 @@ def parsing(string):
             times.append(lists[i])
             team1s.append(lists[i + 2] + lists[i + 3])
             team2s.append(lists[i + 4] + lists[i + 5])
-    print("==============================")
+    return_message += str(date + "\n")
     print(date)
     for time, team1, team2 in zip(times, team1s, team2s):
-        print(time + ":" + team1 + " vs " + team2)
+        print("\t" + time + " : " + team1 + " vs " + team2)
+        return_message = str("\t" + time + " : " + team1 + " vs " + team2 + "\n")
+
+    return return_message
 
 
-def get_today_nfl_schedules():
+def get_nfl_schedules():
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
     url = 'https://www.nfl.com/schedules/'
+    return_message = ''
+
     driver.get(url)
 
     try:
         elements = driver.find_elements(By.XPATH,
                                         '/html/body/div[3]/main/div/section/div/div')
         for idx, title in enumerate(elements, 1):
-            parsing(title.text)
+            return_message += parsing(title.text)
 
     except Exception as e:
         print(f"Error : {e}")
     driver.quit()
 
+    return return_message
+
 
 if __name__ == "__main__":
-    get_today_nfl_schedules()
+    print(get_nfl_schedules())
