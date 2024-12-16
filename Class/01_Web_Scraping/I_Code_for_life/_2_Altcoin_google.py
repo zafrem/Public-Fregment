@@ -25,7 +25,6 @@ def get_today_stock_data(altcoin):
     # Step 4: Extract specific data
     current = soup.select_one('#crypto-updatable_tLNBZ8WsLeb02roP_qLU4A0_2 > div.card-section.PZPZlf > div:nth-child('
                               '2) > span.pclqee')
-    print(current) # None
     # Browser size The code may vary depending on browser size or device.
     # Change selector : Delete tag #crypto-updatable_tLNBZ8WsLeb02roP_qLU4A0_2
 
@@ -43,7 +42,6 @@ def get_today_stock_data(altcoin):
 
     with open("titles.txt", "a+", encoding="utf-8") as file:
         file.write(f"""{datetime.today().strftime("%Y-%m-%d %H:%M:%S")}: {altcoin} {current.get_text().strip()} ({changed.get_text().strip()})\n""")
-        #print("Titles saved to titles.txt")
     return f"""{datetime.today().strftime("%Y-%m-%d %H:%M:%S")}: {altcoin} {current.get_text().strip()} ({changed.get_text().strip()})\n"""
 
 
