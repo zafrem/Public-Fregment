@@ -1,5 +1,5 @@
 # pip install selenium webdriver-manager
-
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
@@ -9,7 +9,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 def get_keyword():
-    import time
     service = Service(ChromeDriverManager().install())
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service, options=options)
@@ -20,17 +19,14 @@ def get_keyword():
 
     try:
         time.sleep(10)
-        #WebDriverWait(driver, 10).until(
-            # Wait loading element
-            #EC.presence_of_element_located((By.XPATH,
-            #                                '/html/body/main/div/section/div[1]/div[3]/div[1]/div[1]/time'))
-        #)
-        #time.sleep(5)
         elements = driver.find_elements(By.XPATH,
                                         '/html/body/main/div/section/div[1]/div[3]/div[1]/div/time')
         if 0 == len(elements):
             elements = driver.find_elements(By.XPATH,
                                         '/html/body/main/div[5]/div/nav/div[2]/div[1]/div/time')
+        if 0 == len(elements):
+            elements = driver.find_elements(By.XPATH,
+                                        '/html/body/main/div[4]/div/nav/div[2]/div[1]/div/time')
 
         for idx, title in enumerate(elements, 1):
             print(idx, title.text)
