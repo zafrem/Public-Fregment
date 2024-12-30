@@ -1,54 +1,56 @@
+import _0_Coin as coin_data
 import sqlite3
 
-# Step 1: Connect to the SQLite database (or create it if it doesn't exist)
+
 db_name = "example.db"
 conn = sqlite3.connect(db_name)
 cursor = conn.cursor()
 
-# Step 2: Create a table
+
 def create_table():
     cursor.execute('''
-        CREATE TABLE IF NOT EXISTS users (
+        CREATE TABLE IF NOT EXISTS coin (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
-            age INTEGER,
-            email TEXT
+            current_info INTEGER,
+            change_point INTEGER
         )
     ''')
-    print("Table 'users' created successfully.")
+    print("Table 'coin' created successfully.")
 
-# Step 3: Insert data into the table
-def insert_data(name, age, email):
+
+def insert_data(curr_point, changed_point):
     cursor.execute('''
-        INSERT INTO users (name, age, email) 
-        VALUES (?, ?, ?)
-    ''', (name, age, email))
+        INSERT INTO coin (current_info, change_point) 
+        VALUES (?, ?)
+    ''', (curr_point, changed_point))
     conn.commit()
-    print(f"Inserted {name}, {age}, {email} into the table.")
+    print(f"Inserted {curr_point}, {changed_point} into the table.")
 
-# Step 4: Fetch data from the table
+
 def fetch_data():
-    cursor.execute('SELECT * FROM users')
+    cursor.execute('SELECT * FROM coin')
     rows = cursor.fetchall()
     print("\nFetched Data:")
     for row in rows:
         print(row)
 
-# Step 5: Close the connection
+
 def close_connection():
     conn.close()
     print("\nDatabase connection closed.")
 
-# Main workflow
-create_table()  # Create the table
 
-# Insert sample data
-insert_data("Alice", 25, "alice@example.com")
-insert_data("Bob", 30, "bob@example.com")
-insert_data("Charlie", 35, "charlie@example.com")
+if __name__ == "__main__":
+    coin_name = "bitcoin"
 
-# Fetch and display the data
-fetch_data()
+    current_info, change_point = coin_data.get_today_stock_data(coin_name)
+    create_table()  # Create the table
 
-# Close the connection
-close_connection()
+    # Insert sample data
+    insert_data(current_info, change_point)
+
+    # Fetch and display the data
+    fetch_data()
+
+    # Close the connection
+    close_connection()
