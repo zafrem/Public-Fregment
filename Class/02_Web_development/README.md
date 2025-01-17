@@ -1,3 +1,3 @@
 # Web development
 
-## [Code for life](./I_Code_for_life/README.md)
+## [Code for life](1_Code_for_life/README.md)
