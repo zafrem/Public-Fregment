@@ -11,6 +11,10 @@
 
 In summary, crawling is about discovering and indexing web content, while scraping is about extracting targeted data from specific sites.
 
+## API
+Stock Library
+1. yfinance · 2. pandas-datareader · 3. Theta Data · 4. Alpha Vantage · 5. Finnhub · 6. Nasdaq Data Link (formerly Quandl) · 7. Twelve Data · 8. IBApi
+
 ## Scraping
 ### Static (requests)
 How to use the requests library in Python to send an HTTP GET request and work with the response.
