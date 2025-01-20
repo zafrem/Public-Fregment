@@ -15,5 +15,6 @@ class PlusTest(unittest.TestCase):
     def test_stock(self):
         self.assertIn("", self.scraping._1_(""))
 
+
 if __name__ == '__main__':
     unittest.main()

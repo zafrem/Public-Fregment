@@ -1,0 +1,1 @@
+import _0_Coin_Data_getter as coin_data

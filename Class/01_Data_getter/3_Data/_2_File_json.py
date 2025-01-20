@@ -1,4 +1,4 @@
-import _0_Coin as coin_data
+import _0_Coin_Data_getter as coin_data
 import json
 from datetime import datetime
 import time

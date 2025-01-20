@@ -1,5 +1,10 @@
 # Theory
-## Crawling and Scraping
+## API, RSS, Crawling and Scraping
+
+**API** 
+
+**RSS** 
+
 **Crawling** is the process of systematically browsing the web to discover and index pages. It is primarily used by search engines like Google to find new and updated content across the internet. Crawlers, also known as spiders or bots, navigate through web pages by following links. The goal is to create an up-to-date index of websites for search engines, so they can efficiently provide relevant results to users.
 
 **Scraping**, on the other hand, involves extracting specific information from web pages. Scraping targets the content of a page, often for analysis or to make use of the data in some other context, like building price comparison tools. Web scrapers are designed to access a specific site, parse its HTML, and extract structured information like product details, prices, or reviews.
